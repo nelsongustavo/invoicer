@@ -1,0 +1,12 @@
+<nav>
+  <div class="nav-wrapper green">
+    <a href="#" class="brand-logo">Invoicer</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#">Nova Matricula</a></li>
+      <li><a href="#">Todos os clientes</a></li>
+    </ul>
+  </div>
+</nav>
+<% flash.each do |name, msg| %>
+	<%= content_tag :div, msg, id: "flash_#{name}" %>
+<% end %>
