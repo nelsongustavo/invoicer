@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :portions
+  resources :sales
+  resources :products
+  resources :payment_methods
+  resources :customers
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

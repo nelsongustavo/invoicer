@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customer</th>
+      <th>User</th>
+      <th>Sale date</th>
+      <th>Total</th>
+      <th>Paymentmethod</th>
+      <th>Times</th>
+      <th>Is fitpark</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sales.each do |sale| %>
+      <tr>
+        <td><%= sale.Customer %></td>
+        <td><%= sale.user_id %></td>
+        <td><%= sale.sale_date %></td>
+        <td><%= sale.total %></td>
+        <td><%= sale.PaymentMethod %></td>
+        <td><%= sale.times %></td>
+        <td><%= sale.is_fitpark %></td>
+        <td><%= link_to 'Show', sale %></td>
+        <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
+        <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sale', new_sale_path %>

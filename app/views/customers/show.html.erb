@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Enrolment:</strong>
+  <%= @customer.enrolment %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @customer.cpf %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @customer.address %>
+</p>
+
+<%= link_to 'Editar', edit_customer_path(@customer) %> |
+<%= link_to 'Voltar', customers_path %>

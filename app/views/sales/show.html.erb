@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @sale.Customer %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @sale.user_id %>
+</p>
+
+<p>
+  <strong>Sale date:</strong>
+  <%= @sale.sale_date %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @sale.total %>
+</p>
+
+<p>
+  <strong>Paymentmethod:</strong>
+  <%= @sale.PaymentMethod %>
+</p>
+
+<p>
+  <strong>Times:</strong>
+  <%= @sale.times %>
+</p>
+
+<p>
+  <strong>Is fitpark:</strong>
+  <%= @sale.is_fitpark %>
+</p>
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>

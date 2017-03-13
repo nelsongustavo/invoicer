@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Portion date:</strong>
+  <%= @portion.portion_date %>
+</p>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @portion.Sale %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @portion.name %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @portion.number %>
+</p>
+
+<p>
+  <strong>Is paid:</strong>
+  <%= @portion.is_paid %>
+</p>
+
+<%= link_to 'Edit', edit_portion_path(@portion) %> |
+<%= link_to 'Back', portions_path %>
